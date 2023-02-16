@@ -21,6 +21,7 @@ alias c cargo
 alias v nvim
 alias sv "sudo nvim"
 alias py3 python3
+alias off "shutdown -h now"
 
 # Packages
 alias pkg-add "sudo pacman -U"
