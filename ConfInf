@@ -1,0 +1,6 @@
+chmod +x polybar/launch.sh bspwmrc sxhkdrc
+
+for nvidia switch:
+	prime-offload
+	optimus-manager --switch nvidia
+	sudo prime-switch

@@ -45,5 +45,4 @@ picom -f &
 feh --bg-fill --randomize ~/Desktop/Wallps
 ~/.config/polybar/launch.sh
 sxhkd &
-bspwm
-sudo /usr/bin/prime-switch
+exec bspwm
