@@ -22,6 +22,7 @@ alias v nvim
 alias sv "sudo nvim"
 alias py3 python3
 alias off "shutdown -h now"
+alias pause "systemctl suspend"
 
 # Packages
 alias pkg-add "sudo pacman -U"

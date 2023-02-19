@@ -4,3 +4,9 @@ for nvidia switch:
 	prime-offload
 	optimus-manager --switch nvidia
 	sudo prime-switch
+
+for linux-xanmod:
+	yay -S linux-xanmod linux-xanmod-headers
+	sv /etc/mkinitcpio.conf:
+		MODULES=(nvidia nvidia_modeset nvidia_drm lz4 lz4_compress)
+	dkms-autoinstall
