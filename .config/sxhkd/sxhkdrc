@@ -7,23 +7,23 @@ alt + Return
 	urxvt
 
 # program launcher
-alt + p
+alt + shift + p
 	dmenu_run
 
 # firefox
-alt + f
+alt + shift + f
 	firefox
 
 # steam
-alt + s
+alt + shift + s
 	steam
 
 # minecraft
-alt + m
+alt + shift + m
 	multimc
 
 # discord
-alt + d
+alt + shift + d
 	discord
 
 # make sxhkd reload its configuration files:

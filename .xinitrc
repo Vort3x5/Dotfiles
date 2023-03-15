@@ -40,9 +40,8 @@ nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 {ForceFullComp
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
-setxkbmap pl &
 picom -f &
 feh --bg-fill --randomize ~/Desktop/Wallps
 ~/.config/polybar/launch.sh
-sxhkd &
+sxhkd -m 1 &
 exec bspwm

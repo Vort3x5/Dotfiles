@@ -10,3 +10,7 @@ for linux-xanmod:
 	sv /etc/mkinitcpio.conf:
 		MODULES=(nvidia nvidia_modeset nvidia_drm lz4 lz4_compress)
 	dkms-autoinstall
+
+for kb-lay-switch:
+	sv /etc/X11/xorg.conf.d/30-keyboard.conf
+	v .config/fish/config.fish
