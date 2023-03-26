@@ -9,7 +9,6 @@ URxvt.font:xft:Terminus:pixelsize=30
 ! scrolling
 URxvt*scrollTtyOutput:      false
 URxvt*scrollWithBuffer:     true
-URxvt*scrollTtyKeypress:    true
 
 ! special
 *.foreground:   #06f72e

@@ -5,7 +5,8 @@ end
 
 clear
 fastfetch
-setxkbmap us -variant colemak_dh
+setxkbmap pl
+# setxkbmap us -variant colemak_dh
 
 # nvim +terminal
 # :set modifiable

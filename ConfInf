@@ -14,3 +14,4 @@ for linux-xanmod:
 for kb-lay-switch:
 	sv /etc/X11/xorg.conf.d/30-keyboard.conf
 	v .config/fish/config.fish
+	not required with the moonlander!
