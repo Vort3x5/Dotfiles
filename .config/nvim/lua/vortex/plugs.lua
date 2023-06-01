@@ -11,7 +11,6 @@ return require('packer').startup(function(use)
 		requires = {'nvim-lua/plenary.nvim'},
 		config = function() require("telescope").setup {} end
 	}
-	use 'tpope/vim-surround'
 	use 'nvim-lualine/lualine.nvim'
 	use 'terryma/vim-multiple-cursors'
 	use 'rust-lang/rust.vim'
@@ -20,6 +19,7 @@ return require('packer').startup(function(use)
 		config = function() require("nvim-autopairs").setup {} end,
 		require('nvim-autopairs').enable()
 	}
+	use 'tpope/vim-surround'
 
 	use {
 		'VonHeikemen/lsp-zero.nvim',

@@ -3,28 +3,31 @@ if status is-interactive
     bind \cz complete
 end
 
-clear
-fastfetch
 setxkbmap pl
 # setxkbmap us -variant colemak_dh
 
 # nvim +terminal
 # :set modifiable
 
+clear
+fm6000 -f ~/Desktop/Logos/arch_logo.txt -c blue -o "Arch"
 set fish_greeting ""
 
-if not pgrep -f startx > /dev/null
-	command startx
-end
+# paths
+set -x PATH ~/.config/emacs/bin/:$PATH
+set -x PKG_CONFIG_PATH /usr/lib/pkgconfig /usr/share/pkgconfig
 
 # Terminal
 alias g git
 alias c cargo
 alias v nvim
+alias pv "nvim ."
 alias sv "sudo nvim"
 alias py3 python3
 alias off "shutdown -h now"
 alias pause "systemctl suspend"
+alias t "tree"
+alias l "ls -l"
 
 # Packages
 alias pkg-add "sudo pacman -U"

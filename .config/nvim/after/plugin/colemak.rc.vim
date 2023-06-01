@@ -71,31 +71,24 @@ noremap <silent> <M-y> :simalt y<CR>|noremap <silent> <M-z> :simalt z<CR>|
 
 " Turbo navigation mode
 " Modified to work with counts, see :help complex-repeat
-nnoremap <silent> N @='5n'<CR>|xnoremap <silent> N @='5n'<CR>|onoremap N 5h|
-nnoremap <silent> U @='5u'<CR>|xnoremap <silent> U @='5u'<CR>|onoremap U 5k|
-nnoremap <silent> E @='5e'<CR>|xnoremap <silent> E @='5e'<CR>|onoremap E 5j|
+nnoremap <silent> M @='5m'<CR>|xnoremap <silent> M @='5m'<CR>|onoremap M 5h|
+nnoremap <silent> E @='5e'<CR>|xnoremap <silent> E @='5e'<CR>|onoremap E 5k|
+nnoremap <silent> N @='5N'<CR>|xnoremap <silent> N @='5n'<CR>|onoremap N 5j|
 nnoremap <silent> I @='5i'<CR>|xnoremap <silent> I @='5i'<CR>|onoremap I 5l|
-inoremap <M-N> <C-o>5h|cnoremap <M-N> <Left><Left><Left><Left><Left>|
-inoremap <M-U> <C-o>5k|cnoremap <M-U> <Up><Up><Up><Up><Up>|
-inoremap <M-E> <C-o>5j|cnoremap <M-E> <Down><Down><Down><Down><Down>|
+inoremap <M-M> <C-o>5h|cnoremap <M-M> <Left><Left><Left><Left><Left>|
+inoremap <M-E> <C-o>5k|cnoremap <M-E> <Up><Up><Up><Up><Up>|
+inoremap <M-N> <C-o>5j|cnoremap <M-N> <Down><Down><Down><Down><Down>|
 inoremap <M-I> <C-o>5l|cnoremap <M-I> <Right><Right><Right><Right><Right>|
 
 " Up/down/left/right
-nnoremap n h|xnoremap n h|onoremap n h|
-nnoremap u k|xnoremap u k|onoremap u k|
-nnoremap e j|xnoremap e j|onoremap e j|
+nnoremap m h|xnoremap m h|onoremap m h|
+nnoremap e k|xnoremap e k|onoremap e k|
+nnoremap n j|xnoremap n j|onoremap n j|
 nnoremap i l|xnoremap i l|onoremap i l|
-inoremap <M-n> <Left>|cnoremap <M-n> <Left>|
-inoremap <M-u> <Up>|cnoremap <M-u> <Up>|
-inoremap <M-e> <Down>|cnoremap <M-e> <Down>|
+inoremap <M-m> <Left>|cnoremap <M-m> <Left>|
+inoremap <M-e> <Up>|cnoremap <M-e> <Up>|
+inoremap <M-n> <Down>|cnoremap <M-n> <Down>|
 inoremap <M-i> <Right>|cnoremap <M-i> <Right>|
-
-" Home/end of line
-" 0 unchanged
-nnoremap L ^|xnoremap L ^|onoremap L ^|
-nnoremap Y $|xnoremap Y $|onoremap Y $|
-inoremap <M-L> <Home>|cnoremap <M-L> <Home>|
-inoremap <M-Y> <End>|cnoremap <M-Y> <End>|
 
 " PageUp/PageDown
 nnoremap <silent> <expr> j (winheight(0)-1) . "\<C-u>"
@@ -114,31 +107,19 @@ cnoremap <M-j> <PageUp>|
 cnoremap <M-h> <PageDown>|
 
 " Half page up/down
-nnoremap <silent> <expr> <C-u> (winheight(0)/2) . "\<C-u>"
-nnoremap <silent> <expr> <C-e> (winheight(0)/2) . "\<C-d>"
-vnoremap <silent> <expr> <C-u> (winheight(0)/2) . "\<C-u>"
-vnoremap <silent> <expr> <C-e> (winheight(0)/2) . "\<C-d>"
+nnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
+nnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
+vnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
+vnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
 
 " Jump to line
 nnoremap - gg|xnoremap - gg|onoremap - gg|
 nnoremap _ G|xnoremap _ G|onoremap _ G|
 
-" Words forwards/backwards
-nnoremap l b|xnoremap l b|onoremap l b|
-nnoremap y w|xnoremap y w|onoremap y w|
-inoremap <M-l> <C-Left>|cnoremap <M-l> <C-Left>|
-inoremap <M-y> <C-Right>|cnoremap <M-y> <C-Right>|
-" WORD left/right
-nnoremap <C-l> B|vnoremap <C-l> B|onoremap <C-l> B|
-nnoremap <C-y> W|vnoremap <C-y> W|onoremap <C-y> W|
-
-" inneR text objects
-" e.g. dip (delete inner paragraph) is now drp
-onoremap r i
-
 " End of word forwards/backwards
-nnoremap ; e|xnoremap ; e|onoremap ; e|
-nnoremap g; ge|xnoremap g; ge|onoremap g; ge|
+nnoremap f e|xnoremap f e|onoremap f e|
+nnoremap gf ge|xnoremap gf ge|onoremap gf ge|
+nnoremap F E|xnoremap F E|onoremap F E|
 " Folds, etc.
 "nnoremap ; z|xnoremap ; z|
 
@@ -152,25 +133,9 @@ nnoremap g; ge|xnoremap g; ge|onoremap g; ge|
 "xnoremap <End> <End><Right>|
 
 " Cut/copy/paste
-nnoremap x x|xnoremap x d|
-nnoremap c y|xnoremap c y|
-nnoremap v gP|xnoremap v gP|
-nnoremap X dd|xnoremap X d|
-nnoremap C yy|xnoremap C y|
-nnoremap V p|xnoremap V p|
-nnoremap <C-c> "+Y| " <C-c> with no selection copies current line to clipboard
-nnoremap <C-x> "+dd| " <C-x> with no selection cuts current line to clipboard
-" (GUI) Make <C-c>/<C-v> work also in command mode, but must be selected using the mouse
-cnoremap <C-c> <C-y>|
-cnoremap <C-Insert> <C-y>|
-cnoremap <C-v> <C-r>+|
-cnoremap <S-Insert> <C-r>+|
-
 " Undo/redo
-nnoremap z u|xnoremap z :<C-u>undo<CR>|
-nnoremap gz U|xnoremap gz U<C-u>undo<CR>|
-nnoremap Z <C-r>|xnoremap Z :<C-u>redo<CR>|
-inoremap <CR> <C-g>u<CR>| " Break undo chain (Tip #1054)
+nnoremap l u|xnoremap l :<C-u>undo<CR>|
+nnoremap gl U|xnoremap gl U<C-u>undo<CR>|
 
 " Cursor position jumplist
 nnoremap ( <C-o>|
@@ -219,27 +184,9 @@ inoremap <silent> <C-S-Up> <C-o>:move .-2<CR>|
 inoremap <silent> <C-S-Down> <C-o>:move .+1<CR>|
 
 " inSert/Replace/append (T)
-nnoremap s i|
-nnoremap S I|
-nnoremap t a|
-nnoremap T A|
-
-" Make insert/add work also in visual line mode like in visual block mode
-xnoremap <silent> <expr> s (mode() =~# "[V]" ? "\<C-v>0o$I" : "I")
-xnoremap <silent> <expr> S (mode() =~# "[V]" ? "\<C-v>0o$I" : "I")
-xnoremap <silent> <expr> t (mode() =~# "[V]" ? "\<C-v>0o$A" : "A")
-xnoremap <silent> <expr> T (mode() =~# "[V]" ? "\<C-v>0o$A" : "A")
-
-" Change
-nnoremap w c|xnoremap w c|
-nnoremap W C|xnoremap W C|
-nnoremap ww cc|
-
-" Visual mode
-nnoremap a v|xnoremap a v|
-nnoremap A V|xnoremap A V|
-nnoremap <C-a> <Esc>ggVG$|xnoremap <C-a> <Esc>ggVG$|vnoremap <C-a> <Esc>ggVG$|
-nnoremap <C-b> <C-v>|
+nnoremap u i|
+nnoremap U I|
+"
 " Allow switching from visual line to visual block mode
 vnoremap <silent> <expr> <C-b> (mode() =~# "[vV]" ? "\<C-v>0o$" : "")
 
@@ -253,10 +200,10 @@ inoremap <C-b> <C-v>|cnoremap <C-b> <C-v>|
 " Search
 " f unchanged
 " F unchanged
-nnoremap p t|xnoremap p t|onoremap p t|
-nnoremap P T|xnoremap P T|onoremap P T|
-nnoremap b ;|xnoremap b ;|onoremap b ;|
-nnoremap B ,|xnoremap B ,|onoremap B ,|
+nnoremap t f|xnoremap t f|onoremap t f|
+nnoremap T F|xnoremap T F|onoremap T F|
+nnoremap j t|xnoremap j t|onoremap j t|
+nnoremap J T|xnoremap J T|onoremap J T|
 nnoremap k n|xnoremap k n|onoremap k n|
 nnoremap K N|xnoremap K N|onoremap K N|
 
@@ -302,36 +249,12 @@ nnoremap Q @q|
 " , is reserved for your custom remapping
 "
 
-" Misc overridden keys must be prefixed with g
-nnoremap gs s|xnoremap gs s|
-nnoremap gX X|xnoremap gX X|
-nnoremap gU U|xnoremap gU U|
-nnoremap gQ Q|xnoremap gQ Q|
-nnoremap gK K|xnoremap gK K|
 " extra alias
 nnoremap gh K|xnoremap gh K| 
-
-" Window handling: <C-w> is now <C-r>
-nnoremap <C-r> <C-w>|xnoremap <C-r> <C-w>|
-" <C-r><C-r> opens a new window
-nnoremap <C-r><C-r> <C-w>n|xnoremap <C-r><C-r> <C-w>n|
-nnoremap <C-r>n <C-w>h|xnoremap <C-r>n <C-w>h| 
-nnoremap <C-r>u <C-w>k|xnoremap <C-r>u <C-w>k| 
-nnoremap <C-r>e <C-w>j|xnoremap <C-r>e <C-w>j| 
-nnoremap <C-r>i <C-w>l|xnoremap <C-r>i <C-w>l| 
 
 nnoremap <Space> i<Space><Esc><Right>|
 xnoremap <silent> <Space> :<C-u>let b:tmp_var=&sw\|set sw=1\|normal! gv><CR>:<C-u>let &sw=b:tmp_var\|normal! gv<CR>
 xnoremap <silent> <S-Space> :<C-u>let b:tmp_var=&sw\|set sw=1\|normal! gv<<CR>:<C-u>let &sw=b:tmp_var\|normal! gv<CR>
-
-" The Tab key is mapped to Escape. Press Shift-Tab to insert a Tab.
-" To minimize Tab use, you can use '<', '>' and ':set autoindent'
-nnoremap <silent> <Tab> <Esc>:nohlsearch<bar>pclose<CR>|
-vnoremap <Tab> <Esc><Nul>| " <Nul> added to fix select mode problem
-inoremap <Tab> <Esc>|
-nnoremap <S-Tab> i<Tab><Esc><Right>
-vnoremap <S-Tab> >gv|
-inoremap <S-Tab> <Tab>|
 
 " Enter, open line
 nnoremap <CR> i<CR><Esc>|
@@ -356,3 +279,7 @@ inoremap <M-/> <C-n>|
 inoremap <C-S-Space> <C-p>|
 inoremap <expr> <C-Space> (&omnifunc == '' <bar><bar> pumvisible() ? "\<C-n>" : "\<C-x>\<C-o>")
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" delete in
+onoremap r i
+vnoremap r i

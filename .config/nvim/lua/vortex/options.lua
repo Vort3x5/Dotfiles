@@ -17,11 +17,11 @@ local options = {
 	termguicolors = true,
 	background = "dark",
 	scrolloff = 8,
+	clipboard = "unnamedplus",
 }
 
 vim.syntax = "enable"
-vim.colorscheme = "neosolarized"
-vim.opt.clipboard:append { 'unnamedplus' }
+vim.colorscheme = "default"
 
 for k, v in pairs(options) do
 	vim.opt[k] = v
