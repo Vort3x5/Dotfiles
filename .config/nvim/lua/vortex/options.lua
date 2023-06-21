@@ -21,7 +21,7 @@ local options = {
 }
 
 vim.syntax = "enable"
-vim.colorscheme = "default"
+vim.colorscheme = "neosolarized"
 
 for k, v in pairs(options) do
 	vim.opt[k] = v

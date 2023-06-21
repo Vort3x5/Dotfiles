@@ -3,7 +3,7 @@ URxvt*depth: 32
 URxvt*termName: rxvt-unicode-256color
 URxvt.foreground: gray
 URxvt.cursorColor: gray
-URxvt.background: [85]#02020f
+URxvt.background: [75]#02020f
 URxvt.font:xft:Terminus:pixelsize=30
 
 ! Disable ISO Mode
@@ -20,7 +20,8 @@ URxvt*scrollWithBuffer:     true
 ! Keymaps
 URxvt.keysym.Meta-c: make clean\n
 URxvt.keysym.Meta-m: make\n
-URxvt.keysym.Meta-r: make run\n
+URxvt.keysym.Meta-r: make release\n
+URxvt.keysym.Meta-d: make debug\n
 
 URxvt.keysym.Meta-t: clear && ls -l && clear && tree\n
 URxvt.keysym.Meta-l: clear && ls -l\n

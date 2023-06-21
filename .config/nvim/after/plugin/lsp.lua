@@ -9,7 +9,7 @@ lsp.ensure_installed({
 	'pylsp',
 	'luau_lsp',
 	'bashls',
-	'sqls',
+	'sqlls',
 	'asm_lsp',
 })
 
@@ -48,10 +48,12 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
 	vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+
+	client.server_capabilities.semanticTokensProvider = nil
 end)
 
 lsp.setup()
 
 vim.diagnostic.config({
-	virtual_text = true
+	virtual_text = false
 })
