@@ -4,7 +4,7 @@
 
 # terminal emulator
 alt + Return
-	urxvt
+	alacritty
 
 # Emacs
 alt + shift + e
@@ -12,7 +12,7 @@ alt + shift + e
 
 # program launcher
 alt + shift + p
-	dmenu_run
+	rofi -show run
 
 # firefox
 alt + shift + f

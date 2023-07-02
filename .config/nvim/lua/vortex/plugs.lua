@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
 	use 'terryma/vim-multiple-cursors'
 
 	-- Rust
-	-- use 'rust-lang/rust.vim'
+	use 'rust-lang/rust.vim'
 
 	use {
 		"windwp/nvim-autopairs",

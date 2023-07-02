@@ -55,5 +55,5 @@ end)
 lsp.setup()
 
 vim.diagnostic.config({
-	virtual_text = false
+	virtual_text = true
 })

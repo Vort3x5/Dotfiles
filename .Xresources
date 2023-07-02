@@ -4,7 +4,7 @@ URxvt*termName: rxvt-unicode-256color
 URxvt.foreground: gray
 URxvt.cursorColor: gray
 URxvt.background: [75]#02020f
-URxvt.font:xft:Terminus:pixelsize=30
+URxvt.font:xft:Terminus:pixelsize=32
 
 ! Disable ISO Mode
 URxvt.iso14755: false
@@ -52,7 +52,7 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 *.color2:       #859900
 *.color10:      #859900
 
-! :ellow
+! Yellow
 *.color3:       #b58900
 *.color11:      #b58900
 
