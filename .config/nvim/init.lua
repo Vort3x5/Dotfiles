@@ -1,3 +1,3 @@
-require("vortex.options")
-require("vortex.plugs")
-require("vortex.keymaps")
+require("options")
+require("plugs")
+require("keymaps")
