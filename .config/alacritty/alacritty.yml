@@ -49,6 +49,9 @@ live_config_reload: true
 
 shell:
   program: /usr/bin/fish
+    # args:
+    # - -c
+    # - nvim +terminal
 
 key_bindings:
   - { key: Return, mods: Alt|Shift, action: SpawnNewInstance }
@@ -57,8 +60,10 @@ key_bindings:
   - { key: M, mods: Alt, chars: "make\n" }
   - { key: R, mods: Alt, chars: "make release\n" }
   - { key: D, mods: Alt, chars: "make debug\n" }
+  - { key: G, mods: Alt, chars: "make GRUB\n" }
 
-  - { key: T, mods: Alt, chars: "ls && clear && tree\n" }
+  - { key: T, mods: Alt, chars: "ls && clear && tree && wc -l --total=only **/* 2>/dev/null | tail -n 1\n" }
   - { key: L, mods: Alt, chars: "clear && ls -l\n" }
   - { key: P, mods: Alt, chars: "v .\n" }
   - { key: H, mods: Alt, chars: "cd\n" }
+  - { key: Comma, mods: Alt, chars: "wc -l --total=only **/* 2>/dev/null | tail -n 1\n" }

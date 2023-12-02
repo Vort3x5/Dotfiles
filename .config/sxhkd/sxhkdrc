@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
 # terminal emulator
 alt + Return
 	alacritty
@@ -11,7 +15,7 @@ alt + shift + e
 	emacs
 
 # program launcher
-alt + shift + p
+alt + shift + r
 	rofi -show run
 
 # firefox
@@ -30,9 +34,11 @@ alt + shift + m
 alt + shift + d
 	discord
 
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
+alt + shift + p
+	deepin-screenshot
+
+alt + shift + c
+	deepin-screenshot -f
 
 #
 # bspwm hotkeys

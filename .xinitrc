@@ -41,8 +41,9 @@ xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
 
 picom -f &
-emacs --daemon &
+# emacs --daemon &
 feh --bg-fill --randomize ~/Desktop/Wallps
 ~/.config/polybar/launch.sh
 sxhkd -m 1 &
+unclutter --start-hidden --timeout=1 &
 exec bspwm

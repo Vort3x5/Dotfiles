@@ -15,7 +15,9 @@ set fish_greeting ""
 
 # paths
 set -x PATH ~/.config/emacs/bin/:$PATH
+set -x PATH ~/.cargo/bin/:$PATH
 set -x PKG_CONFIG_PATH /usr/lib/pkgconfig /usr/share/pkgconfig
+set -x LLVM_CONFIG_PATH /usr/bin/llvm-config
 
 # Terminal
 alias g git

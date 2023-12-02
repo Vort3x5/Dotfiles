@@ -1,17 +1,20 @@
 chmod +x polybar/launch.sh bspwmrc sxhkdrc
 
-for nvidia switch:
+nvidia switch:
 	prime-offload
 	optimus-manager --switch nvidia
 	sudo prime-switch
 
-for linux-xanmod:
+linux-xanmod:
 	yay -S linux-xanmod linux-xanmod-headers
 	sv /etc/mkinitcpio.conf:
 		MODULES=(nvidia nvidia_modeset nvidia_drm lz4 lz4_compress)
 	dkms-autoinstall
 
-for kb-lay-switch:
+kb-lay-switch:
 	sv /etc/X11/xorg.conf.d/30-keyboard.conf
 	v .config/fish/config.fish
 	not required with the moonlander!
+
+monitors:
+	xrandr --output eDP-1-1 --off --output HDMI-0 --auto
