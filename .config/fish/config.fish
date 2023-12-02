@@ -21,6 +21,8 @@ set -x LLVM_CONFIG_PATH /usr/bin/llvm-config
 
 # Terminal
 alias g git
+alias gst "git status -uno"
+alias gsta "git status"
 alias c cargo
 alias v nvim
 alias pv "nvim ."
