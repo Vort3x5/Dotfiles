@@ -1,3 +1,3 @@
-require("options")
 require("plugs")
+require("options")
 require("keymaps")
