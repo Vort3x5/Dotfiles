@@ -12,13 +12,13 @@ dap.listeners.after.event_exited["dapui_config"] = function()
 	dapui.close()
 end
 
-vim.keymap.set("n", "<leader>db", ':DapToggleBreakpoint<CR>')
-vim.keymap.set("n", "<leader>dx", ':DapTerminate<CR>')
-vim.keymap.set("n", "<leader>dn", ':DapStepOver<CR>')
-vim.keymap.set("n", "<leader>ds", ':DapStepInto<CR>')
-vim.keymap.set("n", "<leader>do", ':DapStepOut<CR>')
-vim.keymap.set("n", "<leader>dc", ':DapContinue<CR>')
-vim.keymap.set("n", "<leader>dr", ':DapRestart<CR>')
+vim.keymap.set("n", "<Leader>db", ':DapToggleBreakpoint<CR>')
+vim.keymap.set("n", "<Leader>dx", ':DapTerminate<CR>')
+vim.keymap.set("n", "<Leader>dn", ':DapStepOver<CR>')
+vim.keymap.set("n", "<Leader>ds", ':DapStepInto<CR>')
+vim.keymap.set("n", "<Leader>do", ':DapStepOut<CR>')
+vim.keymap.set("n", "<Leader>dc", ':DapContinue<CR>')
+vim.keymap.set("n", "<Leader>dr", ':DapRestart<CR>')
 
 dap.configurations.c = {
 	{
