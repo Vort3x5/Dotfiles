@@ -1,3 +1,4 @@
+-- Ensure Installed
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -69,6 +70,11 @@ local plugs = {
 			{'rafamadriz/friendly-snippets'}, -- Optional
 		}
 	},
+
+	'simrat39/rust-tools.nvim',
+
+	-- Debug
+	{ 'mfussenegger/nvim-dap', dependencies = 'rcarriga/nvim-dap-ui' },
 }
 
 local opts = {}
