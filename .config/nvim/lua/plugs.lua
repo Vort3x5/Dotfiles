@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugs = {
  
 	-- Colorizer
-	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate', commit = '000f718' },
 
 	-- Color Scheme
 	{
@@ -75,6 +75,12 @@ local plugs = {
 
 	-- Debug
 	{ 'mfussenegger/nvim-dap', dependencies = 'rcarriga/nvim-dap-ui' },
+
+	-- Warnings And Errors In A Seperate Buffer
+	{ 'folke/trouble.nvim', opts = { icons = false, }},
+
+	-- Fasm
+	{ 'fedorenchik/fasm.vim' }
 }
 
 local opts = {}

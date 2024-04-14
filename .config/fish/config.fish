@@ -38,6 +38,8 @@ alias pkg-add "sudo pacman -U"
 alias pkg-install "sudo pacman -S"
 alias pkg-update "sudo pacman -Syu"
 alias pkg-remove "sudo pacman -Rns"
+alias pkg-clroot "sudo pacman -Scc"
+alias aur-clroot "sudo pacman -Rns $(pacman -Qtdq)"
 
 # Settings
 alias bright "sudo vim /sys/class/backlight/amdgpu_bl0/brightness"
