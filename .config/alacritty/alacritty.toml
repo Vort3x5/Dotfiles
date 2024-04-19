@@ -1,0 +1,137 @@
+# draw_bold_text_with_bright_color = true
+live_config_reload = true
+
+[colors.bright]
+black = "0x657b83"
+blue = "0x268bd2"
+cyan = "0x2aa198"
+green = "0x859900"
+magenta = "0x6c71c4"
+red = "0xdc322f"
+white = "0xfdf6e3"
+yellow = "0xb58900"
+
+[colors.normal]
+black = "0x002b36"
+blue = "0x268bd2"
+cyan = "0x2aa198"
+green = "0x859900"
+magenta = "0x6c71c4"
+red = "0xdc322f"
+white = "0x93a1a1"
+yellow = "0xb58900"
+
+[colors.primary]
+background = "0x02020f"
+foreground = "0xffffff"
+
+[cursor.style]
+blinking = "always"
+shape = "Beam"
+
+[cursor.vi_mode_style]
+shape = "Block"
+
+[font]
+size = 30
+
+[font.normal]
+family = "Terminus"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = """
+make clean
+"""
+key = "C"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+make
+"""
+key = "M"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+make release
+"""
+key = "R"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+make debug
+"""
+key = "D"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+make GRUB
+"""
+key = "Q"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+gst
+"""
+key = "G"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+ls && clear && tree && wc -l --total=only **/* 2>/dev/null | tail -n 1
+"""
+key = "T"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+clear && ls -l
+"""
+key = "L"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+v .
+"""
+key = "P"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+cd
+"""
+key = "H"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+wc -l --total=only **/* 2>/dev/null | tail -n 1
+"""
+key = "Comma"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+cd ..
+"""
+key = "B"
+mods = "Alt"
+
+# [selection]
+# copy_to_clipboard = true
+
+[shell]
+program = "/usr/bin/fish"
+
+[window]
+opacity = 0.75
