@@ -10,7 +10,6 @@ lsp.ensure_installed({
 	'luau_lsp',
 	'bashls',
 	'sqlls',
-	'asm_lsp',
 })
 
 local cmp = require('cmp')
