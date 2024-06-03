@@ -8,9 +8,6 @@ lsp.ensure_installed({
 	'clangd',
 	'pylsp',
 	'luau_lsp',
-	'bashls',
-	'sqlls',
-	'asm_lsp',
 })
 
 local cmp = require('cmp')

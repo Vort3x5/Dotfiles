@@ -24,7 +24,7 @@ alt + shift + f
 
 # steam
 alt + shift + s
-	steam
+	prime-run steam
 
 # minecraft
 alt + shift + m
