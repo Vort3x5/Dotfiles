@@ -40,8 +40,8 @@ family = "Terminus"
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
-key = "Return"
-mods = "Alt|Shift"
+key = "T"
+mods = "Super|Shift"
 
 [[keyboard.bindings]]
 chars = """
@@ -87,7 +87,7 @@ mods = "Alt"
 
 [[keyboard.bindings]]
 chars = """
-ls && clear && tree && wc -l --total=only **/* 2>/dev/null | tail -n 1
+clear && lsd --tree
 """
 key = "T"
 mods = "Alt"

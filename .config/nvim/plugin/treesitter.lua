@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-	ensure_installed = { "c", "cpp", "lua", "rust", "fish", "python", "bash", "sql", "vim", "go", "wgsl" },
+	ensure_installed = {"llvm", "c", "cpp", "lua", "rust", "fish", "python", "bash", "sql", "vim", "go", "wgsl" },
 	sync_install = true,
 	auto_install = true,
 	highlight = { 

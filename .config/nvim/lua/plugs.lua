@@ -80,7 +80,10 @@ local plugs = {
 	{ 'folke/trouble.nvim', opts = { icons = false, }},
 
 	-- Fasm
-	{ 'fedorenchik/fasm.vim' }
+	{ 'fedorenchik/fasm.vim' },
+
+	-- LLVM
+	{ 'rhysd/vim-llvm' }
 }
 
 local opts = {}

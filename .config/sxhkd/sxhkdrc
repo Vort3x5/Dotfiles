@@ -7,7 +7,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # terminal emulator
-alt + Return
+super + t
 	alacritty
 
 # Emacs
@@ -15,15 +15,15 @@ alt + shift + e
 	emacs
 
 # program launcher
-alt + shift + r
+super + a
 	rofi -show run
 
 # firefox
-alt + shift + f
+super + b
 	firefox
 
 # steam
-alt + shift + s
+super + s
 	prime-run steam
 
 # minecraft
@@ -31,7 +31,7 @@ alt + shift + m
 	multimc
 
 # discord
-alt + shift + d
+super + d
 	discord
 
 alt + shift + p
@@ -69,7 +69,7 @@ super + g
 #
 
 # set the window state
-super + {t,shift + t,s,f}
+super + {t,alt + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags

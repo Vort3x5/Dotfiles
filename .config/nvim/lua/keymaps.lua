@@ -21,12 +21,9 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 -- Plug
 
 -- Telescope
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>f', builtin.find_files, {})
-vim.keymap.set('n', '<leader>g', builtin.live_grep, {})
+local telescope = require('telescope.builtin')
+vim.keymap.set('n', '<leader>f', telescope.find_files, {})
+vim.keymap.set('n', '<leader>g', telescope.live_grep, {})
 
 -- Trouble
-vim.keymap.set("n", "<leader>xx", function() require("trouble").toggle() end)
-vim.keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
-vim.keymap.set("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
-vim.keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
+local trouble = require('trouble')
