@@ -24,8 +24,8 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 local telescope = require('telescope.builtin')
 vim.keymap.set('n', '<leader>f', telescope.find_files, {})
 vim.keymap.set('n', '<leader>g', telescope.live_grep, {})
-vim.keymap.set('n', '<leader>fb', telescope.buffers, {})
-vim.keymap.set('n', '<leader>fh', telescope.help_tags, {})
+vim.keymap.set('n', '<leader>tb', telescope.buffers, {})
+vim.keymap.set('n', '<leader>th', telescope.help_tags, {})
 
 -- Trouble
 local trouble = require('trouble')
