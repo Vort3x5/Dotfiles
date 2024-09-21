@@ -24,7 +24,7 @@ super + b
 
 # steam
 super + s
-	prime-run steam
+	steam
 
 # minecraft
 alt + shift + m
