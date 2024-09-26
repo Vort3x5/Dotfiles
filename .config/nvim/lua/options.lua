@@ -18,10 +18,10 @@ local options = {
 	background = "dark",
 	scrolloff = 8,
 	clipboard = "unnamedplus",
+	syntax = "enable",
 }
 
-vim.syntax = "enable"
-vim.colorscheme = "neosolarized"
+vim.cmd("colorscheme neosolarized")
 
 for k, v in pairs(options) do
 	vim.opt[k] = v
