@@ -83,7 +83,7 @@ local plugs = {
 	{ 'fedorenchik/fasm.vim' },
 
 	-- LLVM
-	{ 'rhysd/vim-llvm' }
+	{ 'rhysd/vim-llvm' },
 }
 
 local opts = {}
