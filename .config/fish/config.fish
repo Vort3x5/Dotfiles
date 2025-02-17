@@ -19,6 +19,9 @@ set -x PATH ~/.cargo/bin/:$PATH
 set -x PKG_CONFIG_PATH /usr/lib/pkgconfig /usr/share/pkgconfig
 set -x LLVM_CONFIG_PATH /usr/bin/llvm-config
 
+set -x LUA_PATH "/home/vortex/.luarocks/share/lua/5.4/?.lua;;"
+set -x LUA_CPATH "/home/vortex/.luarocks/lib/lua/5.4/?.so;;"
+
 # Terminal
 alias g git
 alias gst "git status -uno"
