@@ -13,6 +13,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugs = {
+
+	-- Alignment
+	'junegunn/vim-easy-align',
  
 	-- Colorizer
 	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate', commit = '000f718' },

@@ -22,6 +22,9 @@ set -x LLVM_CONFIG_PATH /usr/bin/llvm-config
 set -x LUA_PATH "/home/vortex/.luarocks/share/lua/5.4/?.lua;;"
 set -x LUA_CPATH "/home/vortex/.luarocks/lib/lua/5.4/?.so;;"
 
+# Java 
+set -x PATH /usr/lib/jvm/java-23-openjdk/bin/:$PATH
+
 # Terminal
 alias g git
 alias gst "git status -uno"

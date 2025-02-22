@@ -49,10 +49,10 @@ cnoremap <M-j> <PageUp>|
 cnoremap <M-h> <PageDown>|
 
 " Half page up/down
-nnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
-nnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
-vnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
-vnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
+" nnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
+" nnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
+" vnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
+" vnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
 
 " Jump to line
 nnoremap - gg|xnoremap - gg|onoremap - gg|
@@ -205,13 +205,13 @@ nnoremap <S-CR> O<Esc>|
 nnoremap <C-CR> o<Esc>|inoremap <C-CR> <C-o>o|
 
 " Delete/Backspace
-nnoremap <C-d> "_dw|vnoremap <C-d> "_d|inoremap <C-d> <Delete>|cnoremap <C-d> <Delete>|
-nnoremap <Delete> "_x|vnoremap <Delete> "_d|
-nnoremap <Backspace> a<Left><Backspace><Right><Esc>|vnoremap <Backspace> "_d|
-nnoremap <C-Backspace> a<Left><C-W><Right><Esc>|inoremap <C-Backspace> <C-w>|cnoremap <C-Backspace> <C-w>|
-nnoremap <C-Delete> "_dw|inoremap <C-Delete> <C-o>"_dw|cnoremap <C-Delete> <Delete>|
-nnoremap <S-Backspace> "_d^|inoremap <S-Backspace> <Backspace>|cnoremap <S-Backspace> <Backspace>|
-nnoremap <S-Delete> "_d$|inoremap <S-Delete> <Delete>|cnoremap <S-Delete> <Delete>|
+" nnoremap <C-d> "_dw|vnoremap <C-d> "_d|inoremap <C-d> <Delete>|cnoremap <C-d> <Delete>|
+" nnoremap <Delete> "_x|vnoremap <Delete> "_d|
+" nnoremap <Backspace> a<Left><Backspace><Right><Esc>|vnoremap <Backspace> "_d|
+" nnoremap <C-Backspace> a<Left><C-W><Right><Esc>|inoremap <C-Backspace> <C-w>|cnoremap <C-Backspace> <C-w>|
+" nnoremap <C-Delete> "_dw|inoremap <C-Delete> <C-o>"_dw|cnoremap <C-Delete> <Delete>|
+" nnoremap <S-Backspace> "_d^|inoremap <S-Backspace> <Backspace>|cnoremap <S-Backspace> <Backspace>|
+" nnoremap <S-Delete> "_d$|inoremap <S-Delete> <Delete>|cnoremap <S-Delete> <Delete>|
 
 " Local autocomplete
 inoremap <M-?> <C-p>|
