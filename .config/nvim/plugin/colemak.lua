@@ -1,10 +1,3 @@
--- move selected in visual mode
-vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
--- move current line in normal mode
-vim.keymap.set("n", "N", ':move .+1<CR>', { noremap = true, silent = true})
-vim.keymap.set("n", "E", ':move .-2<CR>', { noremap = true, silent = true})
-
 vim.cmd [[ 
 
 if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later" | echohl None | finish | endif
@@ -57,12 +50,6 @@ vnoremap <silent> <expr> <S-PageDown> (winheight(0)-1) . "\<C-d>"
 cnoremap <M-j> <PageUp>|
 cnoremap <M-h> <PageDown>|
 
-" Half page up/down
-" nnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
-" nnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
-" vnoremap <silent> <expr> E (winheight(0)/2) . "\<C-u>"
-" vnoremap <silent> <expr> N (winheight(0)/2) . "\<C-d>"
-
 " Jump to line
 nnoremap - gg|xnoremap - gg|onoremap - gg|
 nnoremap _ G|xnoremap _ G|onoremap _ G|
@@ -71,17 +58,6 @@ nnoremap _ G|xnoremap _ G|onoremap _ G|
 nnoremap f e|xnoremap f e|onoremap f e|
 nnoremap gf ge|xnoremap gf ge|onoremap gf ge|
 nnoremap F E|xnoremap F E|onoremap F E|
-" Folds, etc.
-"nnoremap ; z|xnoremap ; z|
-
-" Map ; to :
-" nnoremap ; :|xnoremap ; :|
-
-" for virtualedit=onemore
-"set virtualedit=block,onemore
-"nnoremap <End> <End><Right>|
-"snoremap <End> <End><Right>|
-"xnoremap <End> <End><Right>|
 
 " Cut/copy/paste
 " Undo/redo
@@ -236,3 +212,9 @@ onoremap r i
 vnoremap r i 
 
 ]]
+-- move selected in visual mode
+vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
+-- move current line in normal mode
+vim.keymap.set("n", "N", ':move .+1<CR>', { noremap = true, silent = true})
+vim.keymap.set("n", "E", ':move .-2<CR>', { noremap = true, silent = true})
