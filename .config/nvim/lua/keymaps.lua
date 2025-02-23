@@ -20,13 +20,6 @@ vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]])
 
 -- Movement
 
--- move selected in visual mode
-vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
--- move current line in normal mode
-vim.keymap.set("n", "N", ':move .+1<CR>', { noremap = true, silent = true})
-vim.keymap.set("n", "E", ':move .-2<CR>', { noremap = true, silent = true})
-
 -- cursor in the middle when paging up/down
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")

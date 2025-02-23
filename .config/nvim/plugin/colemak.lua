@@ -1,3 +1,12 @@
+-- move selected in visual mode
+vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
+-- move current line in normal mode
+vim.keymap.set("n", "N", ':move .+1<CR>', { noremap = true, silent = true})
+vim.keymap.set("n", "E", ':move .-2<CR>', { noremap = true, silent = true})
+
+vim.cmd [[ 
+
 if v:version < 700 | echohl WarningMsg | echo "colemak.vim: You need Vim version 7.0 or later" | echohl None | finish | endif
 
 " Make Alt pop up the menu for all keys, mappings in use will be overridden subsequentially
@@ -224,4 +233,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " delete in
 onoremap r i
-vnoremap r i
+vnoremap r i 
+
+]]
