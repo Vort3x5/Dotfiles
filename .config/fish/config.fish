@@ -18,6 +18,7 @@ set -x PATH ~/.config/emacs/bin/:$PATH
 set -x PATH ~/.cargo/bin/:$PATH
 set -x PKG_CONFIG_PATH /usr/lib/pkgconfig /usr/share/pkgconfig
 set -x LLVM_CONFIG_PATH /usr/bin/llvm-config
+set -x PATH /usr/lib/jvm/java-21-openjdk/bin/:$PATH
 
 # Terminal
 alias g git
