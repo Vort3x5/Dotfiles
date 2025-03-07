@@ -26,6 +26,7 @@ alias gst "git status -uno"
 alias gsta "git status"
 alias c cargo
 alias v nvim
+alias stm32ide "flatpak run com.st.STM32CubeIDE"
 alias pv "nvim ."
 alias sv "sudo nvim"
 alias py3 python3
