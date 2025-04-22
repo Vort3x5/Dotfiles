@@ -18,7 +18,8 @@ local plugs = {
 	'junegunn/vim-easy-align',
  
 	-- Colorizer
-	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate', commit = '000f718' },
+	-- { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate', commit = '000f718' },
+	{ 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
 
 	-- Color Scheme
 	{
