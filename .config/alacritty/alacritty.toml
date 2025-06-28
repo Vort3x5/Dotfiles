@@ -36,7 +36,7 @@ shape = "Block"
 size = 30
 
 [font.normal]
-family = "Terminus"
+family = "xos4 Terminus"
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
