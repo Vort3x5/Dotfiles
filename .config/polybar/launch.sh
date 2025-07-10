@@ -1,6 +1,1 @@
-#!/bin/bash
-
-killall -q polybar
-polybar Statbar 2>&1 | tee -a /tmp/polybar.log & disown
-
-echo "Polybar launched..."
+/nix/store/nwbbq3c95cvp5f82wnalaflqqik0czay-home-manager-files/.config/polybar/launch.sh
