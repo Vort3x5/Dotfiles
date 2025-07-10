@@ -1,5 +1,4 @@
 # draw_bold_text_with_bright_color = true
-general.live_config_reload = true
 
 [colors.bright]
 black = "0x657b83"
@@ -36,7 +35,7 @@ shape = "Block"
 size = 30
 
 [font.normal]
-family = "xos4 Terminus"
+family = "Terminus"
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
@@ -129,9 +128,6 @@ mods = "Alt"
 
 # [selection]
 # copy_to_clipboard = true
-
-[terminal.shell]
-program = "/usr/bin/fish"
 
 [window]
 opacity = 0.75
